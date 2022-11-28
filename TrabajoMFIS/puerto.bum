@@ -1,4 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
     <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.variable name="(" org.eventb.core.identifier="a"/>
+    <org.eventb.core.variable name=")" org.eventb.core.identifier="b"/>
+    <org.eventb.core.variable name="*" org.eventb.core.identifier="c"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="tf_pass"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="b_pass"/>
+    <org.eventb.core.variable name="-" org.eventb.core.identifier="A"/>
+    <org.eventb.core.variable name="." org.eventb.core.identifier="B"/>
+    <org.eventb.core.variable name="/" org.eventb.core.identifier="C"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="TF_OUT_S"/>
+    <org.eventb.core.variable name="1" org.eventb.core.identifier="TF_IN_S"/>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="B_OUT_S"/>
+    <org.eventb.core.variable name="3" org.eventb.core.identifier="B_IN_S"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="m_tf"/>
+    <org.eventb.core.variable name="5" org.eventb.core.identifier="m_b"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="tf_out_s"/>
+    <org.eventb.core.variable name="7" org.eventb.core.identifier="tf_in_s"/>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="b_out_s"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="b_in_s"/>
 </org.eventb.core.machineFile>
