@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="State" org.eventb.core.type="ℙ(State)"/>
+        <org.eventb.core.poIdentifier name="stop" org.eventb.core.type="State"/>
+        <org.eventb.core.poIdentifier name="go" org.eventb.core.type="State"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrabajoMFIS/STATE.bpo|org.eventb.core.poFile#STATE|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="State={go,stop}" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#*"/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="go≠stop" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#+"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>

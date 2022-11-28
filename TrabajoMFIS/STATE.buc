@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.contextFile org.eventb.core.configuration="org.eventb.core.fwd" version="3">
+    <org.eventb.core.carrierSet name="'" org.eventb.core.identifier="State"/>
+    <org.eventb.core.constant name="(" org.eventb.core.identifier="go"/>
+    <org.eventb.core.constant name=")" org.eventb.core.identifier="stop"/>
+    <org.eventb.core.axiom name="*" org.eventb.core.label="axm4" org.eventb.core.predicate="State = {go, stop}"/>
+    <org.eventb.core.axiom name="+" org.eventb.core.label="axm3" org.eventb.core.predicate="go ≠ stop"/>
+</org.eventb.core.contextFile>
