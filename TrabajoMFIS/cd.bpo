@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poIdentifier name="m" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrabajoMFIS/cd.bpo|org.eventb.core.poFile#cd|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="3">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="m∈ℕ" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#("/>
+        <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="m&gt;0" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#)"/>
+    </org.eventb.core.poPredicateSet>
+</org.eventb.core.poFile>
