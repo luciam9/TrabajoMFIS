@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.scMachineFile org.eventb.core.accurate="false" org.eventb.core.configuration="org.eventb.core.fwd">
-    <org.eventb.core.scEvent name="'" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#internal_evt1"/>
-    <org.eventb.core.scEvent name="(" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_in" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#("/>
-    <org.eventb.core.scEvent name=")" org.eventb.core.accurate="false" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_out" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#)"/>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/TrabajoMFIS/cd.bcc" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.seesContext#internal_var2"/>
+    <org.eventb.core.scInternalContext name="cd">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scConstant name="n" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.constant#'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scInvariant name="ce" org.eventb.core.label="inv1" org.eventb.core.predicate="m∈ℕ" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#*" org.eventb.core.theorem="true"/>
+    <org.eventb.core.scInvariant name="cf" org.eventb.core.label="inv2" org.eventb.core.predicate="m≤n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#+" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scInvariant name="cg" org.eventb.core.label="thm1" org.eventb.core.predicate="m&gt;0∨m&lt;n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#," org.eventb.core.theorem="true"/>
+    <org.eventb.core.scVariable name="m" org.eventb.core.abstract="false" org.eventb.core.concrete="true" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.variable#internal_var1" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scEvent name="ch" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#internal_evt1">
+        <org.eventb.core.scAction name="'" org.eventb.core.assignment="m ≔ 0" org.eventb.core.label="act1" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#internal_evt1|org.eventb.core.action#internal_act1"/>
+    </org.eventb.core.scEvent>
+    <org.eventb.core.scEvent name="ci" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_in" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#(">
+        <org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="m&gt;0" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#(|org.eventb.core.guard#'" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAction name="(" org.eventb.core.assignment="m ≔ m − 1" org.eventb.core.label="act1" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#(|org.eventb.core.action#("/>
+    </org.eventb.core.scEvent>
+    <org.eventb.core.scEvent name="cj" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_out" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#)">
+        <org.eventb.core.scGuard name="'" org.eventb.core.label="grd1" org.eventb.core.predicate="m&lt;n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#)|org.eventb.core.guard#'" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAction name="(" org.eventb.core.assignment="m ≔ m+1" org.eventb.core.label="act1" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.event#)|org.eventb.core.action#("/>
+    </org.eventb.core.scEvent>
 </org.eventb.core.scMachineFile>

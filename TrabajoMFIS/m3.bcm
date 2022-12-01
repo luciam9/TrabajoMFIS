@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
+    <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/TrabajoMFIS/cd.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#:"/>
+    <org.eventb.core.scSeesContext name="(" org.eventb.core.scTarget="/TrabajoMFIS/SENSOR.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#;"/>
+    <org.eventb.core.scSeesContext name=")" org.eventb.core.scTarget="/TrabajoMFIS/STATE.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#="/>
+    <org.eventb.core.scInternalContext name="cd">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scConstant name="n" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.constant#'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scInternalContext name="SENSOR">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="Sensor={on,off}" org.eventb.core.source="/TrabajoMFIS/SENSOR.buc|org.eventb.core.contextFile#SENSOR|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="¬on=off" org.eventb.core.source="/TrabajoMFIS/SENSOR.buc|org.eventb.core.contextFile#SENSOR|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scCarrierSet name="Sensor" org.eventb.core.source="/TrabajoMFIS/SENSOR.buc|org.eventb.core.contextFile#SENSOR|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(Sensor)"/>
+        <org.eventb.core.scConstant name="off" org.eventb.core.source="/TrabajoMFIS/SENSOR.buc|org.eventb.core.contextFile#SENSOR|org.eventb.core.constant#)" org.eventb.core.type="Sensor"/>
+        <org.eventb.core.scConstant name="on" org.eventb.core.source="/TrabajoMFIS/SENSOR.buc|org.eventb.core.contextFile#SENSOR|org.eventb.core.constant#(" org.eventb.core.type="Sensor"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scInternalContext name="STATE">
+        <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm4" org.eventb.core.predicate="State={go,stop}" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#*" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm3" org.eventb.core.predicate="go≠stop" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#+" org.eventb.core.theorem="false"/>
+        <org.eventb.core.scConstant name="stop" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.constant#)" org.eventb.core.type="State"/>
+        <org.eventb.core.scCarrierSet name="State" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(State)"/>
+        <org.eventb.core.scConstant name="go" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.constant#(" org.eventb.core.type="State"/>
+    </org.eventb.core.scInternalContext>
+    <org.eventb.core.scEvent name="SENSOS" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#'"/>
+</org.eventb.core.scMachineFile>
