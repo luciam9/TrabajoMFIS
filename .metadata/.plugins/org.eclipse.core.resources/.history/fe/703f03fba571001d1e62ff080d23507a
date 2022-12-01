@@ -80,7 +80,7 @@
     <org.eventb.core.invariant name="internal_inv11I" org.eventb.core.label="inv6" org.eventb.core.predicate="m_cs=go ⇒ b&gt;0" org.eventb.core.theorem="false"/>
     <org.eventb.core.invariant name="internal_inv6I" org.eventb.core.label="inv7" org.eventb.core.predicate="cs_pass ∈ {0,1}"/>
     <org.eventb.core.invariant name="internal_inv7I" org.eventb.core.label="inv8" org.eventb.core.predicate="ml_pass ∈ {0,1}" org.eventb.core.theorem="false"/>
-    <org.eventb.core.invariant name="internal_inv8I" org.eventb.core.comment="" org.eventb.core.label="inv9" org.eventb.core.predicate="m_ml=stop ⇒ ml_pass=1" org.eventb.core.theorem="false"/>
+    <org.eventb.core.invariant name="internal_inv8I" org.eventb.core.comment="" org.eventb.core.label="inv9" org.eventb.core.predicate="m_ml=red ⇒ ml_pass=1" org.eventb.core.theorem="false"/>
     <org.eventb.core.invariant name="internal_inv9I" org.eventb.core.label="inv10" org.eventb.core.predicate="m_cs=stop ⇒ cs_pass=1" org.eventb.core.theorem="false"/>
     <org.eventb.core.invariant name="internal_element1I" org.eventb.core.label="inv11" org.eventb.core.predicate="m_cs=stop ∨ m_ml=stop" org.eventb.core.theorem="false"/>
     <org.eventb.core.refinesMachine name="internal_refines1" org.eventb.core.target="m1"/>
