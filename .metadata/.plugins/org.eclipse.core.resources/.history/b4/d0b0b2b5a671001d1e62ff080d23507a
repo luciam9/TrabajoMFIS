@@ -5337,13 +5337,62 @@
         <org.eventb.core.prPred name="p25" org.eventb.core.predicate="il_tl=green⇒a=0"/>
         <org.eventb.core.prPred name="p26" org.eventb.core.predicate="il_pass∈{0,1}"/>
     </org.eventb.core.prProof>
-    <org.eventb.core.prProof name="thm4/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
-        <org.eventb.core.lang name="L"/>
-        <org.eventb.core.prRule name="r0" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="hyp" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1"/>
+    <org.eventb.core.prProof name="thm4/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11,p12,p13,p14,p15,p16,p17,p18,p19,p20,p21,p22,p23,p24,p25,p26,p27" org.eventb.core.prSets="Color">
+        <org.eventb.core.prRule name="org.eventb.core.seqprover.autoRewrites" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="simplification rewrites" org.eventb.core.prHyps="">
+            <org.eventb.core.prAnte name="0">
+                <org.eventb.core.prHypAction name="FORWARD_INF0" org.eventb.core.prHyps="p21" org.eventb.core.prInfHyps="p28"/>
+                <org.eventb.core.prHypAction name="HIDE1" org.eventb.core.prHyps="p21"/>
+                <org.eventb.core.prRule name="org.eventb.core.seqprover.impI" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="⇒ goal" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="">
+                    <org.eventb.core.prAnte name="0" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="p29">
+                        <org.eventb.core.prRule name="com.clearsy.atelierb.provers.core.externalML" org.eventb.core.confidence="1000" org.eventb.core.prDisplay="ML" org.eventb.core.prGoal="p30" org.eventb.core.prHyps="p14,p2,p25,p1,p24,p8,p17,p7,p15,p5,p22,p10,p6,p3,p19,p4,p16,p26,p9,p27,p11,p20,p12,p18,p23,p13,p28,p29">
+                            <org.eventb.core.prString name=".arg" org.eventb.core.prSValue="0;1:500"/>
+                        </org.eventb.core.prRule>
+                    </org.eventb.core.prAnte>
+                </org.eventb.core.prRule>
+            </org.eventb.core.prAnte>
+        </org.eventb.core.prRule>
+        <org.eventb.core.prIdent name="a" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="b" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="c" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="d" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="green" org.eventb.core.type="Color"/>
+        <org.eventb.core.prIdent name="il_pass" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="il_tl" org.eventb.core.type="Color"/>
+        <org.eventb.core.prIdent name="ml_pass" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.prIdent name="ml_tl" org.eventb.core.type="Color"/>
         <org.eventb.core.prIdent name="n" org.eventb.core.type="ℤ"/>
-        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="¬n≤0"/>
-        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="n&gt;0"/>
-        <org.eventb.core.prReas name="r0" org.eventb.core.prRID="org.eventb.core.seqprover.hyp"/>
+        <org.eventb.core.prIdent name="red" org.eventb.core.type="Color"/>
+        <org.eventb.core.prPred name="p1" org.eventb.core.predicate="n∈ℕ"/>
+        <org.eventb.core.prPred name="p2" org.eventb.core.predicate="d&gt;0"/>
+        <org.eventb.core.prPred name="p3" org.eventb.core.predicate="ml_tl∈{red,green}"/>
+        <org.eventb.core.prPred name="p4" org.eventb.core.predicate="ml_tl=green⇒c=0"/>
+        <org.eventb.core.prPred name="p5" org.eventb.core.predicate="n=a+b+c"/>
+        <org.eventb.core.prPred name="p6" org.eventb.core.predicate="c&gt;0∨a&gt;0∨(a+b&lt;d∧c=0)∨(0&lt;b∧a=0)"/>
+        <org.eventb.core.prPred name="p7" org.eventb.core.predicate="b∈ℕ"/>
+        <org.eventb.core.prPred name="p30" org.eventb.core.predicate="c=0"/>
+        <org.eventb.core.prPred name="p8" org.eventb.core.predicate="n&gt;0∨n&lt;d"/>
+        <org.eventb.core.prPred name="p9" org.eventb.core.predicate="il_tl=green⇒b&gt;0"/>
+        <org.eventb.core.prPred name="p10" org.eventb.core.predicate="a+b+c∈ℕ"/>
+        <org.eventb.core.prPred name="p12" org.eventb.core.predicate="il_tl=red⇒il_pass=1"/>
+        <org.eventb.core.prPred name="p11" org.eventb.core.predicate="ml_pass∈{0,1}"/>
+        <org.eventb.core.prPred name="p13" org.eventb.core.predicate="0≥b⇒b=0"/>
+        <org.eventb.core.prPred name="p14" org.eventb.core.predicate="d∈ℕ"/>
+        <org.eventb.core.prPred name="p15" org.eventb.core.predicate="c∈ℕ"/>
+        <org.eventb.core.prPred name="p29" org.eventb.core.predicate="0≥c"/>
+        <org.eventb.core.prPred name="p16" org.eventb.core.predicate="ml_tl=green⇒a+b+c&lt;d"/>
+        <org.eventb.core.prPred name="p17" org.eventb.core.predicate="a∈ℕ"/>
+        <org.eventb.core.prPred name="p28" org.eventb.core.predicate="¬green=red"/>
+        <org.eventb.core.prPred name="p18" org.eventb.core.predicate="il_tl=red∨ml_tl=red"/>
+        <org.eventb.core.prPred name="p19" org.eventb.core.predicate="il_tl∈{red,green}"/>
+        <org.eventb.core.prPred name="p20" org.eventb.core.predicate="ml_tl=red⇒ml_pass=1"/>
+        <org.eventb.core.prPred name="p21" org.eventb.core.predicate="green≠red"/>
+        <org.eventb.core.prPred name="p22" org.eventb.core.predicate="a=0∨c=0"/>
+        <org.eventb.core.prPred name="p23" org.eventb.core.predicate="0≥a⇒a=0"/>
+        <org.eventb.core.prPred name="p0" org.eventb.core.predicate="0≥c⇒c=0"/>
+        <org.eventb.core.prPred name="p24" org.eventb.core.predicate="n≤d"/>
+        <org.eventb.core.prPred name="p25" org.eventb.core.predicate="Color={green,red}"/>
+        <org.eventb.core.prPred name="p26" org.eventb.core.predicate="il_tl=green⇒a=0"/>
+        <org.eventb.core.prPred name="p27" org.eventb.core.predicate="il_pass∈{0,1}"/>
     </org.eventb.core.prProof>
     <org.eventb.core.prProof name="thm5/THM" org.eventb.core.confidence="1000" org.eventb.core.prFresh="" org.eventb.core.prGoal="p0" org.eventb.core.prHyps="p1">
         <org.eventb.core.lang name="L"/>
