@@ -4,22 +4,24 @@
     <org.eventb.core.variable name="(" org.eventb.core.identifier="a"/>
     <org.eventb.core.variable name=")" org.eventb.core.identifier="b"/>
     <org.eventb.core.variable name="*" org.eventb.core.identifier="c"/>
-    <org.eventb.core.variable name="+" org.eventb.core.identifier="tf_pass"/>
-    <org.eventb.core.variable name="," org.eventb.core.identifier="b_pass"/>
+    <org.eventb.core.variable name="+" org.eventb.core.identifier="ml_pass"/>
+    <org.eventb.core.variable name="," org.eventb.core.identifier="cs_pass"/>
     <org.eventb.core.variable name="-" org.eventb.core.identifier="A"/>
     <org.eventb.core.variable name="." org.eventb.core.identifier="B"/>
     <org.eventb.core.variable name="/" org.eventb.core.identifier="C"/>
-    <org.eventb.core.variable name="0" org.eventb.core.identifier="TF_OUT_S"/>
-    <org.eventb.core.variable name="1" org.eventb.core.identifier="TF_IN_S"/>
-    <org.eventb.core.variable name="2" org.eventb.core.identifier="B_OUT_S"/>
-    <org.eventb.core.variable name="3" org.eventb.core.identifier="B_IN_S"/>
-    <org.eventb.core.variable name="4" org.eventb.core.identifier="m_tf"/>
-    <org.eventb.core.variable name="5" org.eventb.core.identifier="m_b"/>
-    <org.eventb.core.variable name="6" org.eventb.core.identifier="tf_out_s"/>
-    <org.eventb.core.variable name="7" org.eventb.core.identifier="tf_in_s"/>
-    <org.eventb.core.variable name="8" org.eventb.core.identifier="b_out_s"/>
-    <org.eventb.core.variable name="9" org.eventb.core.identifier="b_in_s"/>
+    <org.eventb.core.variable name="0" org.eventb.core.identifier="ML_OUT_S"/>
+    <org.eventb.core.variable name="1" org.eventb.core.identifier="ML_IN_S"/>
+    <org.eventb.core.variable name="2" org.eventb.core.identifier="CS_OUT_S"/>
+    <org.eventb.core.variable name="3" org.eventb.core.identifier="CS_IN_S"/>
+    <org.eventb.core.variable name="4" org.eventb.core.identifier="m_ml"/>
+    <org.eventb.core.variable name="5" org.eventb.core.identifier="m_cs"/>
+    <org.eventb.core.variable name="6" org.eventb.core.identifier="ml_out_s"/>
+    <org.eventb.core.variable name="7" org.eventb.core.identifier="ml_in_s"/>
+    <org.eventb.core.variable name="8" org.eventb.core.identifier="cs_out_s"/>
+    <org.eventb.core.variable name="9" org.eventb.core.identifier="cs_in_s"/>
     <org.eventb.core.seesContext name=":" org.eventb.core.target="cd"/>
     <org.eventb.core.seesContext name=";" org.eventb.core.target="SENSOR"/>
     <org.eventb.core.seesContext name="=" org.eventb.core.target="STATE"/>
+    <org.eventb.core.refinesMachine name="&gt;" org.eventb.core.target="m0"/>
+    <org.eventb.core.invariant name="?" org.eventb.core.label="inv1" org.eventb.core.predicate="⊤"/>
 </org.eventb.core.machineFile>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="0">
+<org.eventb.core.poFile org.eventb.core.poStamp="1">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="0">
         <org.eventb.core.poIdentifier name="n" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poPredicate name="o" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#("/>
@@ -15,7 +15,17 @@
         <org.eventb.core.poPredicate name="Sensou" org.eventb.core.predicate="State={go,stop}" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#*"/>
         <org.eventb.core.poPredicate name="Sensov" org.eventb.core.predicate="go≠stop" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.axiom#+"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
-    <org.eventb.core.poPredicateSet name="EVTALLHYPSENSOS" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0"/>
-    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ABSHYP" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poIdentifier name="m" org.eventb.core.type="ℤ"/>
+        <org.eventb.core.poPredicate name="n" org.eventb.core.predicate="m∈ℕ" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#*"/>
+        <org.eventb.core.poPredicate name="o" org.eventb.core.predicate="m≤n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#+"/>
+        <org.eventb.core.poPredicate name="p" org.eventb.core.predicate="m&gt;0∨m&lt;n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#,"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTIDENTSENSOT" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#CTXHYP" org.eventb.core.poStamp="0">
+        <org.eventb.core.poIdentifier name="m'" org.eventb.core.type="ℤ"/>
+    </org.eventb.core.poPredicateSet>
+    <org.eventb.core.poPredicateSet name="EVTALLHYPSENSOT" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#EVTIDENTSENSOT" org.eventb.core.poStamp="0"/>
+    <org.eventb.core.poPredicateSet name="ALLHYP" org.eventb.core.parentSet="/TrabajoMFIS/m3.bpo|org.eventb.core.poFile#m3|org.eventb.core.poPredicateSet#ABSHYP" org.eventb.core.poStamp="1">
+        <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="⊤" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#?"/>
+    </org.eventb.core.poPredicateSet>
 </org.eventb.core.poFile>

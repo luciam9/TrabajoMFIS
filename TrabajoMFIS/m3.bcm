@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.scMachineFile org.eventb.core.accurate="true" org.eventb.core.configuration="org.eventb.core.fwd">
-    <org.eventb.core.scSeesContext name="'" org.eventb.core.scTarget="/TrabajoMFIS/cd.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#:"/>
-    <org.eventb.core.scSeesContext name="(" org.eventb.core.scTarget="/TrabajoMFIS/SENSOR.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#;"/>
-    <org.eventb.core.scSeesContext name=")" org.eventb.core.scTarget="/TrabajoMFIS/STATE.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#="/>
+    <org.eventb.core.scRefinesMachine name="'" org.eventb.core.scTarget="/TrabajoMFIS/m0.bcm" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.refinesMachine#&gt;"/>
+    <org.eventb.core.scSeesContext name="(" org.eventb.core.scTarget="/TrabajoMFIS/cd.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#:"/>
+    <org.eventb.core.scSeesContext name=")" org.eventb.core.scTarget="/TrabajoMFIS/SENSOR.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#;"/>
+    <org.eventb.core.scSeesContext name="*" org.eventb.core.scTarget="/TrabajoMFIS/STATE.bcc" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.seesContext#="/>
     <org.eventb.core.scInternalContext name="cd">
         <org.eventb.core.scAxiom name="'" org.eventb.core.label="axm1" org.eventb.core.predicate="n∈ℕ" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#(" org.eventb.core.theorem="false"/>
         <org.eventb.core.scAxiom name="(" org.eventb.core.label="axm2" org.eventb.core.predicate="n&gt;0" org.eventb.core.source="/TrabajoMFIS/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#)" org.eventb.core.theorem="false"/>
@@ -22,5 +23,12 @@
         <org.eventb.core.scCarrierSet name="State" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.carrierSet#'" org.eventb.core.type="ℙ(State)"/>
         <org.eventb.core.scConstant name="go" org.eventb.core.source="/TrabajoMFIS/STATE.buc|org.eventb.core.contextFile#STATE|org.eventb.core.constant#(" org.eventb.core.type="State"/>
     </org.eventb.core.scInternalContext>
-    <org.eventb.core.scEvent name="SENSOS" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#'"/>
+    <org.eventb.core.scInvariant name="ce" org.eventb.core.label="inv1" org.eventb.core.predicate="m∈ℕ" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#*" org.eventb.core.theorem="true"/>
+    <org.eventb.core.scInvariant name="cf" org.eventb.core.label="inv2" org.eventb.core.predicate="m≤n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#+" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scInvariant name="cg" org.eventb.core.label="thm1" org.eventb.core.predicate="m&gt;0∨m&lt;n" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.invariant#," org.eventb.core.theorem="true"/>
+    <org.eventb.core.scInvariant name="SENSOS" org.eventb.core.label="inv1" org.eventb.core.predicate="⊤" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.invariant#?" org.eventb.core.theorem="false"/>
+    <org.eventb.core.scVariable name="m" org.eventb.core.abstract="true" org.eventb.core.concrete="false" org.eventb.core.source="/TrabajoMFIS/m0.bum|org.eventb.core.machineFile#m0|org.eventb.core.variable#internal_var1" org.eventb.core.type="ℤ"/>
+    <org.eventb.core.scEvent name="SENSOT" org.eventb.core.accurate="true" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#'">
+        <org.eventb.core.scRefinesEvent name="'" org.eventb.core.scTarget="/TrabajoMFIS/m0.bcm|org.eventb.core.scMachineFile#m0|org.eventb.core.scEvent#ch" org.eventb.core.source="/TrabajoMFIS/m3.bum|org.eventb.core.machineFile#m3|org.eventb.core.event#'"/>
+    </org.eventb.core.scEvent>
 </org.eventb.core.scMachineFile>
