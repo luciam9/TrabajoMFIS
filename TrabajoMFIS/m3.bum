@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <org.eventb.core.machineFile org.eventb.core.configuration="org.eventb.core.fwd" version="5">
-    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION"/>
+    <org.eventb.core.event name="'" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="INITIALISATION">
+        <org.eventb.core.action name="'" org.eventb.core.assignment="a ≔ 0" org.eventb.core.label="act1"/>
+        <org.eventb.core.action name="(" org.eventb.core.assignment="b ≔ 0" org.eventb.core.label="act2"/>
+        <org.eventb.core.action name=")" org.eventb.core.assignment="c ≔ 0" org.eventb.core.label="act3"/>
+        <org.eventb.core.action name="*" org.eventb.core.assignment="m_ml≔stop" org.eventb.core.label="act4"/>
+        <org.eventb.core.action name="+" org.eventb.core.assignment="m_cs≔stop" org.eventb.core.label="act5"/>
+        <org.eventb.core.action name="," org.eventb.core.assignment="ml_pass≔1" org.eventb.core.label="act6"/>
+        <org.eventb.core.action name="-" org.eventb.core.assignment="cs_pass≔1" org.eventb.core.label="act7"/>
+        <org.eventb.core.action name="." org.eventb.core.assignment="ml_out_s ≔ FALSE" org.eventb.core.label="act8"/>
+        <org.eventb.core.action name="/" org.eventb.core.assignment="cs_out_s ≔ FALSE" org.eventb.core.label="act9"/>
+        <org.eventb.core.action name="0" org.eventb.core.assignment="ml_in_s ≔ FALSE" org.eventb.core.label="act10"/>
+        <org.eventb.core.action name="1" org.eventb.core.assignment="cs_in_s ≔ FALSE" org.eventb.core.label="act11"/>
+        <org.eventb.core.action name="2" org.eventb.core.assignment="A ≔ 0" org.eventb.core.label="act12"/>
+        <org.eventb.core.action name="3" org.eventb.core.assignment="B ≔ 0" org.eventb.core.label="act13"/>
+        <org.eventb.core.action name="4" org.eventb.core.assignment="C ≔ 0" org.eventb.core.label="act14"/>
+        <org.eventb.core.action name="5" org.eventb.core.assignment="ML_IN_S ≔ off" org.eventb.core.label="act15"/>
+        <org.eventb.core.action name="6" org.eventb.core.assignment="ML_OUT_S ≔ off" org.eventb.core.label="act16"/>
+        <org.eventb.core.action name="7" org.eventb.core.assignment="CS_OUT_S ≔ off" org.eventb.core.label="act17"/>
+        <org.eventb.core.action name="8" org.eventb.core.assignment="CS_IN_S ≔ off" org.eventb.core.label="act18"/>
+    </org.eventb.core.event>
     <org.eventb.core.variable name="(" org.eventb.core.identifier="a"/>
     <org.eventb.core.variable name=")" org.eventb.core.identifier="b"/>
     <org.eventb.core.variable name="*" org.eventb.core.identifier="c"/>
@@ -23,5 +42,30 @@
     <org.eventb.core.seesContext name=";" org.eventb.core.target="SENSOR"/>
     <org.eventb.core.seesContext name="=" org.eventb.core.target="STATE"/>
     <org.eventb.core.refinesMachine name="&gt;" org.eventb.core.target="m0"/>
-    <org.eventb.core.invariant name="?" org.eventb.core.label="inv1" org.eventb.core.predicate="⊤"/>
+    <org.eventb.core.invariant name="?" org.eventb.core.label="inv1" org.eventb.core.predicate="CS_IN_S = on ⇒ A&gt;0"/>
+    <org.eventb.core.invariant name="@" org.eventb.core.label="inv2" org.eventb.core.predicate="CS_OUT_S = on ⇒ B&gt;0"/>
+    <org.eventb.core.invariant name="A" org.eventb.core.label="inv3" org.eventb.core.predicate="ML_IN_S = on ⇒ C&gt;0"/>
+    <org.eventb.core.invariant name="B" org.eventb.core.label="inv4" org.eventb.core.predicate="ml_out_s = TRUE ⇒ m_ml=go"/>
+    <org.eventb.core.invariant name="C" org.eventb.core.label="inv5" org.eventb.core.predicate="cs_out_s = TRUE ⇒ m_cs = go"/>
+    <org.eventb.core.invariant name="D" org.eventb.core.label="inv6" org.eventb.core.predicate="CS_IN_S = on ⇒ cs_in_s = FALSE"/>
+    <org.eventb.core.invariant name="E" org.eventb.core.label="inv7" org.eventb.core.predicate="CS_OUT_S = on ⇒ cs_out_s = FALSE" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="F" org.eventb.core.label="inv8" org.eventb.core.predicate="ML_IN_S = on ⇒ ml_in_s = FALSE"/>
+    <org.eventb.core.invariant name="G" org.eventb.core.label="inv9" org.eventb.core.predicate="ML_OUT_S = on ⇒ ml_out_s = FALSE"/>
+    <org.eventb.core.invariant name="H" org.eventb.core.label="inv10" org.eventb.core.predicate="cs_in_s = TRUE ∧ ml_out_s = TRUE ⇒ A = a"/>
+    <org.eventb.core.invariant name="I" org.eventb.core.label="inv11" org.eventb.core.predicate="cs_in_s = FALSE ∧ ml_out_s = TRUE ⇒ A = a+1"/>
+    <org.eventb.core.invariant name="J" org.eventb.core.label="inv12" org.eventb.core.predicate="cs_in_s = TRUE ∧ ml_out_s = FALSE ⇒ A = a−1"/>
+    <org.eventb.core.invariant name="K" org.eventb.core.label="inv13" org.eventb.core.predicate="cs_in_s = FALSE ∧ ml_out_s = FALSE ⇒ A = a"/>
+    <org.eventb.core.invariant name="L" org.eventb.core.label="inv14" org.eventb.core.predicate="cs_in_s = TRUE ∧ cs_out_s = TRUE ⇒ B=b"/>
+    <org.eventb.core.invariant name="M" org.eventb.core.label="inv15" org.eventb.core.predicate="cs_in_s = TRUE ∧ cs_out_s = FALSE ⇒ B = b+1" org.eventb.core.theorem="true"/>
+    <org.eventb.core.invariant name="N" org.eventb.core.label="inv16" org.eventb.core.predicate="cs_in_s = FALSE ∧ cs_out_s = TRUE ⇒ B = b−1"/>
+    <org.eventb.core.invariant name="O" org.eventb.core.label="inv17" org.eventb.core.predicate="cs_in_s = FALSE ∧ cs_out_s = FALSE ⇒ B=b"/>
+    <org.eventb.core.invariant name="P" org.eventb.core.label="inv18" org.eventb.core.predicate="cs_out_s = TRUE ∧ ml_in_s = TRUE ⇒ C=c"/>
+    <org.eventb.core.invariant name="Q" org.eventb.core.label="inv19" org.eventb.core.predicate="cs_out_s = TRUE ∧ ml_in_s = FALSE ⇒ C=c+1"/>
+    <org.eventb.core.invariant name="S" org.eventb.core.label="inv20" org.eventb.core.predicate="cs_out_s = FALSE ∧ ml_in_s = TRUE ⇒ C=c−1"/>
+    <org.eventb.core.invariant name="R" org.eventb.core.label="inv21" org.eventb.core.predicate="cs_out_s =FALSE ∧ ml_in_s = FALSE ⇒ C=c"/>
+    <org.eventb.core.invariant name="T" org.eventb.core.label="inv22" org.eventb.core.predicate="A=0 ∨ C=0"/>
+    <org.eventb.core.invariant name="U" org.eventb.core.label="inv23" org.eventb.core.predicate="A+B+C ≤ n"/>
+    <org.eventb.core.invariant name="V" org.eventb.core.label="inv24" org.eventb.core.predicate="A∈ℕ"/>
+    <org.eventb.core.invariant name="W" org.eventb.core.label="inv25" org.eventb.core.predicate="B∈ℕ"/>
+    <org.eventb.core.invariant name="X" org.eventb.core.label="inv26" org.eventb.core.predicate="C∈ℕ"/>
 </org.eventb.core.machineFile>
