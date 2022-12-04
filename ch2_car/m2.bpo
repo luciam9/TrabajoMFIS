@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<org.eventb.core.poFile org.eventb.core.poStamp="1">
+<org.eventb.core.poFile org.eventb.core.poStamp="3">
     <org.eventb.core.poPredicateSet name="CTXHYP" org.eventb.core.poStamp="1">
         <org.eventb.core.poIdentifier name="d" org.eventb.core.type="ℤ"/>
         <org.eventb.core.poPredicate name="e" org.eventb.core.predicate="d∈ℕ" org.eventb.core.source="/ch2_car/cd.buc|org.eventb.core.contextFile#cd|org.eventb.core.axiom#internal_axm1A"/>
@@ -329,7 +329,7 @@
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="ml_tl=green" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt3|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="a+b+1=d" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt3|org.eventb.core.guard#internal_grd2"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="IL_out1/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ml_tl=green⇒c+1=0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv3I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -338,7 +338,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD2"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ml_tl=green⇒a+(b − 1)+(c+1)&lt;d" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv12I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -347,7 +347,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="il_tl=green⇒b − 1&gt;0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv11I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -356,7 +356,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈{0,1}" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv6I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -365,7 +365,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="il_tl=red⇒1=1" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv9I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -374,7 +374,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD9"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;b" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -382,7 +382,7 @@
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt4"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out1\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out1/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out1/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasx"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a=0" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5|org.eventb.core.guard#internal_grd2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -399,7 +399,7 @@
         <org.eventb.core.poPredicate name="PRD0" org.eventb.core.predicate="il_tl=green" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt4|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poPredicate name="PRD1" org.eventb.core.predicate="b&gt;1" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt4|org.eventb.core.guard#internal_grd2"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="IL_out2/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv2/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red∈{red,green}" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv2I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -408,7 +408,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv2\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD1"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv3/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ml_tl=green⇒c+1=0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv3I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -417,7 +417,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv3\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD2"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ml_tl=green⇒a+(b − 1)+(c+1)&lt;d" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv12I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -426,7 +426,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red=green⇒a=0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv4I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -435,7 +435,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red=green⇒b − 1&gt;0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv11I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -444,7 +444,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv6/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="1∈{0,1}" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv6I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -453,7 +453,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv6\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD6"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv9/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red=red⇒1=1" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv9I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -462,7 +462,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv9\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD9"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/inv5/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="red=red∨ml_tl=red" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_element1I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -471,7 +471,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/inv5\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD10"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="0&lt;b" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -479,7 +479,7 @@
         <org.eventb.core.poSource name="SEQHYT" org.eventb.core.poRole="CONCRETE" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt5"/>
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_out2\/grd1\/GRD|org.eventb.core.poPredicateSet#SEQHYP"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_out2/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_out2/grd2/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pasy"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a=0" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5|org.eventb.core.guard#internal_grd2"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt5"/>
@@ -707,7 +707,7 @@
         <org.eventb.core.poPredicate name="PRD2" org.eventb.core.predicate="a=0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt7|org.eventb.core.guard#internal_grd3"/>
         <org.eventb.core.poPredicate name="PRD3" org.eventb.core.predicate="ml_pass=1" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.event#internal_evt7|org.eventb.core.guard#internal_grd4"/>
     </org.eventb.core.poPredicateSet>
-    <org.eventb.core.poSequent name="IL_in/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_in/inv12/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pas\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="ml_tl=green⇒a − 1+(b+1)+c&lt;d" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv12I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt2"/>
@@ -716,7 +716,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_in\/inv12\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD3"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_in/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_in/inv4/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pas\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="il_tl=green⇒a − 1=0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv4I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt2"/>
@@ -725,7 +725,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_in\/inv4\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD4"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_in/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_in/inv11/INV" org.eventb.core.accurate="true" org.eventb.core.poDesc="Invariant  preservation" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pas\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="il_tl=green⇒b+1&gt;0" org.eventb.core.source="/ch2_car/m2.bum|org.eventb.core.machineFile#m2|org.eventb.core.invariant#internal_inv11I"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt2"/>
@@ -734,7 +734,7 @@
         <org.eventb.core.poSelHint name="SEQHYU" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#ALLHYP" org.eventb.core.poSelHintSnd="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poSequent#IL_in\/inv11\/INV|org.eventb.core.poPredicateSet#SEQHYP"/>
         <org.eventb.core.poSelHint name="SEQHYV" org.eventb.core.poSelHintFst="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#HYPCOLO]|org.eventb.core.poPredicate#PRD5"/>
     </org.eventb.core.poSequent>
-    <org.eventb.core.poSequent name="IL_in/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="1">
+    <org.eventb.core.poSequent name="IL_in/grd1/GRD" org.eventb.core.accurate="true" org.eventb.core.poDesc="Guard strengthening (split)" org.eventb.core.poStamp="3">
         <org.eventb.core.poPredicateSet name="SEQHYP" org.eventb.core.parentSet="/ch2_car/m2.bpo|org.eventb.core.poFile#m2|org.eventb.core.poPredicateSet#EVTALLHYPml_pas\|"/>
         <org.eventb.core.poPredicate name="SEQHYQ" org.eventb.core.predicate="a&gt;0" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt2|org.eventb.core.guard#internal_grd1"/>
         <org.eventb.core.poSource name="SEQHYR" org.eventb.core.poRole="ABSTRACT" org.eventb.core.source="/ch2_car/m1.bum|org.eventb.core.machineFile#m1|org.eventb.core.event#internal_evt2"/>

@@ -7,9 +7,9 @@
     </org.eventb.core.event>
     <org.eventb.core.refinesMachine name="(" org.eventb.core.target="m0"/>
     <org.eventb.core.seesContext name=")" org.eventb.core.target="cd"/>
-    <org.eventb.core.variable name="*" org.eventb.core.comment="numero de paquetes en la plataforma" org.eventb.core.identifier="a"/>
-    <org.eventb.core.variable name="+" org.eventb.core.identifier="b"/>
-    <org.eventb.core.variable name="," org.eventb.core.identifier="c"/>
+    <org.eventb.core.variable name="*" org.eventb.core.comment="number of packets on platform going to cargo ship" org.eventb.core.identifier="a"/>
+    <org.eventb.core.variable name="+" org.eventb.core.comment="number of packets on cargo ship" org.eventb.core.identifier="b"/>
+    <org.eventb.core.variable name="," org.eventb.core.comment="number of packets on platform going to mainland" org.eventb.core.identifier="c"/>
     <org.eventb.core.invariant name="-" org.eventb.core.label="inv1" org.eventb.core.predicate="a ∈ ℕ"/>
     <org.eventb.core.invariant name="." org.eventb.core.label="inv2" org.eventb.core.predicate="b ∈ ℕ"/>
     <org.eventb.core.invariant name="/" org.eventb.core.label="inv3" org.eventb.core.predicate="c ∈ ℕ"/>
@@ -17,7 +17,7 @@
     <org.eventb.core.invariant name="1" org.eventb.core.label="inv5" org.eventb.core.predicate="a=0 ∨ c=0"/>
     <org.eventb.core.invariant name="2" org.eventb.core.label="thm1" org.eventb.core.predicate="a+b+c ∈ ℕ" org.eventb.core.theorem="true"/>
     <org.eventb.core.invariant name="3" org.eventb.core.label="thm2" org.eventb.core.predicate="c&gt;0 ∨ a &gt; 0 ∨ (a+b&lt;n ∧ c=0) ∨ (0&lt;b ∧ a=0)" org.eventb.core.theorem="true"/>
-    <org.eventb.core.variant name="4" org.eventb.core.expression="2∗a+b" org.eventb.core.label="b"/>
+    <org.eventb.core.variant name="internal_variant1" org.eventb.core.expression="2∗a+b"/>
     <org.eventb.core.event name="5" org.eventb.core.convergence="0" org.eventb.core.extended="false" org.eventb.core.label="ML_in">
         <org.eventb.core.refinesEvent name="'" org.eventb.core.target="ML_in"/>
         <org.eventb.core.guard name="(" org.eventb.core.label="grd1" org.eventb.core.predicate="a+b&lt;n"/>
